@@ -1,3 +1,148 @@
+
+---------------------------------------------------------------------------------------------
+
+🧠 Git & GitHub - Tutorial Notes
+✅ What is Git?
+
+Git is a version control system used to:
+
+Keep track of changes in code over time.
+
+Revert back to previous versions if needed.
+
+Collaborate with multiple developers efficiently.
+
+✅ What is GitHub?
+
+GitHub is a web-based hosting service for Git repositories.
+
+It allows you to:
+
+Store code online.
+
+Collaborate with others via branches and pull requests.
+
+Track issues and manage projects.
+
+🧩 Alternatives: GitBucket, Bitbucket, GitLab
+
+🛠️ Setting Up Git (First Time Only)
+1. Download & Install Git
+
+Download from: https://git-scm.com
+
+2. Open Command Prompt
+git --version
+
+3. Configure Git (one-time setup)
+git config --global user.name "megachandran"
+git config --global user.email "developer.it.mega@gmail.com"
+
+📦 Cloning a Repository from GitHub
+1. Open VS Code
+
+Open a folder for Git
+
+2. Open Terminal
+git clone <repo-link>
+cd <folder-name>
+
+3. Create or edit files
+touch filename.txt  # or create file in editor
+
+🔄 Git Workflow: Basic Commands
+Step	Command	Description
+Check status	git status	Shows current changes
+Add file	git add filename	Moves file to staging area
+Add all files	git add .	Stages all files in the folder
+Commit	git commit -m "message"	Saves changes in local repo
+Push	git push origin main	Uploads changes to GitHub
+
+➡️ Insert → Add → Commit → Push
+
+❌ Deleting a File
+
+Delete the file manually or via command
+
+rm filename.txt
+
+
+Then run:
+
+git add .
+git commit -m "Deleted filename"
+git push origin main
+
+🏗️ Creating a New Project (From Scratch)
+1. Create and enter folder
+mkdir newfolder
+cd newfolder
+
+2. Initialize Git
+git init
+
+3. Create files and add them
+touch index.html
+git add .
+git commit -m "Initial commit"
+
+4. Create a New Repository on GitHub (manually)
+5. Link Local Repo to GitHub
+git remote add origin <repo-link>
+git branch -M main  # rename master to main (optional)
+git push origin main
+
+🌿 Working with Branches
+Task	Command
+Show branches	git branch -a
+Create a branch	git branch branchname
+Switch to branch	git checkout branchname
+Pull updates	git pull
+Difference between branches	git diff branch1
+Merge a branch	git merge branch1
+Push changes	git push origin branchname
+Switch back to main	git checkout main
+🔁 Pull Requests (PRs)
+
+If you don’t have write access to the main branch:
+
+Create a branch.
+
+Make changes.
+
+Push to GitHub.
+
+Go to GitHub → Open a Pull Request.
+
+⚠️ Conflicts
+
+Occur when two or more people edit the same file.
+
+Git gets confused about which change to keep.
+
+To resolve:
+git pull origin main
+# Manually resolve conflicts in the file
+git add .
+git commit -m "Resolved conflict"
+git push origin main
+
+💡 Summary of Common Commands
+git init                        # Initialize Git in a folder
+git clone <repo-url>           # Clone a GitHub repo
+git status                     # Check current status
+git add .                      # Stage all files
+git commit -m "message"        # Commit changes
+git push origin main           # Push to GitHub
+git branch                     # List branches
+git checkout branchname        # Switch branches
+git merge branchname           # Merge branch into current
+git pull origin main           # Pull updates from GitHub
+
+------------------------------------------------------------------------------------------------------------
+Own notes 
+
+
 git and github 
 
 version control 
@@ -54,3 +199,66 @@ now create a new repo for connect locally created repository to github
 -git branch (*master)
 -git branch -M main (change master to main)
 -git push origin main
+
+
+how branches works?
+
+-git branch -a ( shows list of branches)
+-git pull ( to take branches from github to local repo)
+same steps for adding or modifying the files in new branchs 
+while push u can use created branch name
+
+-git checkout main (change the branch to main)
+
+-git diff gitbranch1 ( to check the difference between 2 branches)
+-git merge gitbranch1 (merge the sub brach to main branch)
+-get push origin main ( to check the changes)
+
+
+-pull request
+
+-git branch branchname (create new branch)
+
+while we hae no direct access to the main branch we can give pull request
+
+access pull request in the github directly inside the repository
+
+-conflicts 
+when 2 person using or accessing the same file the git get confused 
+
+
+-git pull origin main (give or  update changes in main to sub repo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
