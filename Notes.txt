@@ -35,3 +35,22 @@ add the file from staging area to local git
 -git push origin main
 file from loackl git is pushed to github repository and upated in github 
 insert-> add->commit->push
+
+delete a file same process 
+
+
+
+create a new folder and host that folder in github
+cd.. back
+-create a folder 
+-make edit 
+-git init (create a git folder or make the folder as git folder)
+
+-git add . (to add all files in the folder  )
+
+now create a new repo for connect locally created repository to github 
+-create ne repo
+- git remote add origin ( link in repo)
+-git branch (*master)
+-git branch -M main (change master to main)
+-git push origin main
