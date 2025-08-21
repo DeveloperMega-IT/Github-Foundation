@@ -29,4 +29,9 @@ create new file and open the file
 
 - git status 
 -git add filename 
-add the file from working folder to stage area
+add the file from working folder to stage area.
+- git commit -m "messages "
+add the file from staging area to local git
+-git push origin main
+file from loackl git is pushed to github repository and upated in github 
+insert-> add->commit->push
