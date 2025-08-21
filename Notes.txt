@@ -1,0 +1,32 @@
+git and github 
+
+version control 
+keep tracking  code
+collaborate on code (multiple people use code at the same time)
+
+
+github is web based git repository 
+
+gitbucket , bitbucket (alternative)
+
+-commit message will be given when commit an update or changes .
+
+-download and install git .
+-open cmd 
+type git
+
+git config --global user.name "megachandran"
+
+git config --global user.email "developer.it.mega@gmail.com"
+
+
+-open git hub folder in local git 
+-open vs code 
+open a folder for git 
+open terminal -git clone (repo link inside code in github)
+cd filenmae ( to use file )
+create new file and open the file 
+
+- git status 
+-git add filename 
+add the file from working folder to stage area
